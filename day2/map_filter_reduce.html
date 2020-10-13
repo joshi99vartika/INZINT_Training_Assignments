@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array method map,filter,reduce</title>
+</head>
+<body>
+	<h1>array methods</h1>
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+	<button onclick="mappi()"> MAP </button>
+	<button onclick="filt()"> filter </button>
+	<button onclick="reduc()">reduce </button>
+		<script type="text/javascript">
+			var input=[10,50,70,30,20];
+				function mappi(){
+				var mapout=input.map((values)=>{
+				return values+100;
+					});
+				document.getElementById('demo').innerHTML=mapout;
+			}
+
+			function filt(){
+				var filout=input.filter((values)=>{
+				return values>20;
+					});
+				document.getElementById('demo1').innerHTML=filout;
+			}
+
+			function reduc(){
+				var redout=input.reduce(fun);
+				function fun(a,b)
+				{
+					return a+b;
+				}
+
+
+				document.getElementById('demo2').innerHTML= redout;
+			}
+			
+
+
+		</script>
+		
+</body>
+</html>

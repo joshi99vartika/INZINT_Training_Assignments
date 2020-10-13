@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>second day task</title>
+        </head>
+        <body>
+            <h1>sort array using compare function for numeric array</h1>
+
+            <p id="demo">  </p>
+            <p id="demo1"> </p>
+            <p id="demo2"> </p>
+
+            <button onclick="myfun()"> given array</button>
+             <button onclick="myfun1()"> chracter array</button>
+             <button onclick="myfun2()"> numeric array</button>
+
+             <script>
+              var input =[100,20,98,10,200,40,400,5];
+              document.getElementById('demo').innerHTML=input;
+
+              function myfun1(){
+                input.sort();
+                document.getElementById('demo1').innerHTML=input;
+              }
+              function myfun2(){
+                input.sort(function(a, b){
+                 return a-b;
+                    });
+                document.getElementById('demo2').innerHTML=input;
+
+            }
+            </script> 
+        </body>            
+        </html>
