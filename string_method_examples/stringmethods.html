@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>Example of all string methods</head>
+<body>
+<script>
+
+	var str="hello vartika joshi";
+	var str1=str.length;
+	document.write("<br>");
+	document.write(" using lenght method  : " + str1);
+	document.write("<br>");
+	//extracting method 
+	//slice can accpt negative value also and return position-1 value
+	var str2=str.slice(4,7);
+	document.write("<br>");
+	document.write(" using slice method  : " + str2);
+	//substring does not accpt negative values
+	var str3=str.substring(1,11);
+	document.write("<br>");
+	document.write(" using substring method  : " + str3);
+	//In substr second parameter specify the length of extracted string 
+	var str4=str.substr(1,4);
+	document.write("<br>");
+	document.write(" using substr method  : " + str4);
+
+	document.write("<br>");
+	//indexOf method 
+	var str5=str.indexOf("t");
+	document.write("<br>");
+	document.write(" using indexOf method  : " + str5);
+	//lastIndexOf method 
+	var str6=str.lastIndexOf("a");
+	document.write("<br>");
+	document.write(" using lastIndexOf method  : " + str6);
+
+	document.write("<br>");
+	//replace  method 
+	var str7=str.replace("vartika" , "kavita");
+	document.write("<br>");
+	document.write(" using replace method  : " + str7);
+
+	document.write("<br>");
+	//lowercase uppercase methods 
+	var str8=str.toUpperCase();
+	document.write("<br>");
+	document.write(" using toUpperCase method  : " + str8);
+	document.write("<br>");
+	var str9=str.toLowerCase();
+	document.write(" using toLowerCase method  : " + str9);
+
+	document.write("<br>");
+	//concat method 
+	var str10=str.concat(" this is your final year");
+	document.write("<br>");
+	document.write(" using concat method  : " + str10);
+
+	
+	//trim  method 
+	document.write("<br>");
+	var i="     hi vj    "
+	document.write(" string without trim method  : " + i);
+	var str11= i.trim();
+	document.write("<br>");
+	document.write(" using trim method  : " + str11);
+
+	document.write("<br>");
+	//charAt method 
+	var str12=str.charAt(11);
+	document.write("<br>");
+	document.write(" using charAt method  : " + str12);
+
+
+
+
+</script>
+
+</body>
+</html>
+
