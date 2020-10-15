@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string replace and string conversion into array.</title>
+</head>
+<body>
+	
+	
+	<script>
+	var str = "i am learning english in english with subtitles in english hello";
+	var m=	str.indexOf("english");
+	var l =str.indexOf("english",m+1);
+	
+	document.write("second occurance of english"+l);
+	document.write("<br>");
+	var count = 0;
+	for(i=l; i<str.length; i++){
+	count++;
+	}
+	document.write("length after second occurance"+count);
+	</script>
+
+</body>
+</html>
