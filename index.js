@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use('/api', require('./routes/api'));
 
+//aggregation queries
 app.listen(process.env.port||6000,()=>{
     console.log('now listening');
     
